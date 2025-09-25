@@ -1,7 +1,6 @@
 package com.ISD.lab5;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ProbabilityWithoutFailures {
     public static double probabilityCalculations (ArrayList <String> lines) {
