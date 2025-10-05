@@ -5,8 +5,10 @@ import com.ISD.lab3.*;
 import com.ISD.utils.DocumentReader;
 import com.ISD.utils.SplitLines;
 
+import java.io.File;
 import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,39 +56,55 @@ public class Main {
     }
 
     public static void inputResultLab3() {
-        final String FILE_PATH = "D:\\workspace\\informationSystemDesign\\src\\main\\java\\com\\ISD\\filesRead\\metriksHolsteda.txt";
+        final String RELATIVE_FILE_PATH = "filesRead/metriksHolsteda.txt";
         try {
+            // Пробуем разные возможные пути
+            String[] possiblePaths = {
+                    Paths.get("informationSystemDesign","src", "main", "java", "com", "ISD", RELATIVE_FILE_PATH).toString(),
+            };
+
+            String absoluteFilePath = null;
+            for (String path : possiblePaths) {
+                File file = new File(path);
+                System.out.println("Проверяем путь: " + file.getAbsolutePath());
+                if (file.exists()) {
+                    absoluteFilePath = file.getAbsolutePath();
+                    System.out.println("Файл найден: " + absoluteFilePath);
+                    break;
+                }
+            }
+
+            if (absoluteFilePath == null) {
+                System.out.println("Файл не найден. Проверьте расположение файла.");
+                System.out.println("Текущая рабочая директория: " + System.getProperty("user.dir"));
+                return;
+            }
+
             // Чтение данных из файла
-            ArrayList<String> fileData = DataReader.readFile(FILE_PATH);
+            ArrayList<String> fileData = DataReader.readFile(absoluteFilePath);
 
-            // Параметры системы (Задание 1 и 2)
+            // Остальной код без изменений...
             double[] systemParams = DataReader.parseDoubleArray(fileData, 0);
-
-            // Параметры программиста (Задание 3)
             double[] programmerParams = DataReader.parseDoubleArray(fileData, 1);
-            int programsCount = (int) programmerParams[2]; // Количество сделанных программ
+            int programsCount = (int) programmerParams[2];
             ArrayList<Double> programVolumes = DataReader.parseDoubleList(fileData, 2);
             ArrayList<Double> programErrors = DataReader.parseDoubleList(fileData, 3);
             double newProgramVolume = DataReader.parseDoubleArray(fileData, 4)[0];
 
-            // Параметры для Задания 2
-            int programmersCount = 5;    // количество программистов
-            int productivity = 20;       // производительность (команд/день)
-            int workingHours = 8;        // рабочих часов в день
-            double reliabilityParam = 2.0; // параметр надежности
+            int programmersCount = 5;
+            int productivity = 20;
+            int workingHours = 8;
+            double reliabilityParam = 2.0;
 
-            // Выполнение расчетов
+            System.out.println("==========================================");
 
-            // Задание 1
             Task1Calculator task1 = new Task1Calculator(systemParams, programmerParams[1]);
             task1.calculateAndPrint();
 
-            // Задание 2
             Task2Calculator task2 = new Task2Calculator(systemParams, programmersCount,
                     productivity, workingHours, reliabilityParam);
             task2.calculateAndPrint();
 
-            // Задание 3
             Task3Calculator task3 = new Task3Calculator(programmerParams[0], programmerParams[1],
                     programsCount, programVolumes, programErrors,
                     newProgramVolume);
