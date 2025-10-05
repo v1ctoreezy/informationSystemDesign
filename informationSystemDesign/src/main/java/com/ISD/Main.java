@@ -53,56 +53,48 @@ public class Main {
         System.out.println("Фактор надежности : "+ MetricsCalculations.relativeIndicatorsCalculation(MetricsCalculations.absoluteIndicatorsCalculation(probability, MetricsCalculations.finalGradeCalculation(averageRecTimeEstimate,estDurTransformIO)),Double.parseDouble(list.get(6))));
     }
 
-    public static void inputResultLab3(){
-        // Создаем объект для расчетов
-        StructuralMetrics metrics = new StructuralMetrics();
+    public static void inputResultLab3() {
+        final String FILE_PATH = "D:\\workspace\\informationSystemDesign\\src\\main\\java\\com\\ISD\\filesRead\\metriksHolsteda.txt";
+        try {
+            // Чтение данных из файла
+            ArrayList<String> fileData = DataReader.readFile(FILE_PATH);
 
-        // Задание №1
-        System.out.println("Результаты задания №1:");
-        System.out.println("Минимальное число различных операндов (n2*): " + metrics.calculateN2Star());
-        System.out.println("Потенциальный объем программы (V*): " + metrics.calculatePotentialVolume());
-        System.out.println("Потенциальное число ошибок (B): " + metrics.calculatePotentialErrors());
-        System.out.println();
+            // Параметры системы (Задание 1 и 2)
+            double[] systemParams = DataReader.parseDoubleArray(fileData, 0);
 
-        // Задание №2
-        System.out.println("Результаты задания №2:");
-        System.out.println("Число модулей программного средства (k): " + metrics.calculateModules());
+            // Параметры программиста (Задание 3)
+            double[] programmerParams = DataReader.parseDoubleArray(fileData, 1);
+            int programsCount = (int) programmerParams[2]; // Количество сделанных программ
+            ArrayList<Double> programVolumes = DataReader.parseDoubleList(fileData, 2);
+            ArrayList<Double> programErrors = DataReader.parseDoubleList(fileData, 3);
+            double newProgramVolume = DataReader.parseDoubleArray(fileData, 4)[0];
 
-        if (metrics.calculateModules() > 8) {
-            System.out.println("Структура ПО - иерархическая");
-            System.out.println("Число уровней (i): " + metrics.calculateLevels());
+            // Параметры для Задания 2
+            int programmersCount = 5;    // количество программистов
+            int productivity = 20;       // производительность (команд/день)
+            int workingHours = 8;        // рабочих часов в день
+            double reliabilityParam = 2.0; // параметр надежности
+
+            // Выполнение расчетов
+
+            // Задание 1
+            Task1Calculator task1 = new Task1Calculator(systemParams, programmerParams[1]);
+            task1.calculateAndPrint();
+
+            // Задание 2
+            Task2Calculator task2 = new Task2Calculator(systemParams, programmersCount,
+                    productivity, workingHours, reliabilityParam);
+            task2.calculateAndPrint();
+
+            // Задание 3
+            Task3Calculator task3 = new Task3Calculator(programmerParams[0], programmerParams[1],
+                    programsCount, programVolumes, programErrors,
+                    newProgramVolume);
+            task3.calculateAndPrint();
+
+        } catch (Exception e) {
+            System.out.println("Ошибка выполнения программы: " + e.getMessage());
+            e.printStackTrace();
         }
-
-        System.out.println("Уточненное число модулей (K): " + metrics.calculateRefinedModules());
-        System.out.println("Длина программы (N): " + metrics.calculateProgramLength());
-        System.out.println("Объем программного обеспечения (V): " + metrics.calculateVolume());
-
-        // Параметры для расчета команд ассемблера и времени разработки
-        int b = 10; // количество ошибок
-        int m = 5; // количество программистов
-        int v = 20; // производительность
-
-        System.out.println("Количество команд ассемблера (P): " + metrics.calculateAssemblerCommands(b));
-        System.out.println("Календарное время программирования (Tk): " + metrics.calculateDevelopmentTime(m, v) + " дней");
-        System.out.println("Время наработки на отказ (tH): " + metrics.calculateReliability(m, v) + " часов");
-        System.out.println();
-
-        // Задание №3
-        System.out.println("Результаты задания №3:");
-        ProgrammerRating rating = new ProgrammerRating();
-
-        // Расчет рейтинга программиста
-        double currentRating = rating.calculateRating(
-                new double[]{5, 7, 9, 11},
-                new int[]{0, 2, 5, 4},
-                1.53,
-                1000
-        );
-
-        System.out.println("Текущий рейтинг программиста: " + currentRating);
-
-        // Расчет ожидаемых ошибок для новой программы
-        System.out.println("Ожидаемое число ошибок для программы объемом 15 Кбайт: " +
-                rating.calculateExpectedErrors(currentRating, 1.53, 15));
     }
 }
