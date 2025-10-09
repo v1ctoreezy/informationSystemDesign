@@ -83,7 +83,7 @@ public class Main {
             // Чтение данных из файла
             ArrayList<String> fileData = DataReader.readFile(absoluteFilePath);
 
-            // Остальной код без изменений...
+
             double[] systemParams = DataReader.parseDoubleArray(fileData, 0);
             double[] programmerParams = DataReader.parseDoubleArray(fileData, 1);
             int programsCount = (int) programmerParams[2];
