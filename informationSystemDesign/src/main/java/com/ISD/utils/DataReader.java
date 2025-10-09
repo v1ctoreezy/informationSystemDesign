@@ -1,4 +1,4 @@
-package com.ISD.lab3;
+package com.ISD.utils;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ public class DataReader {
                 line = reader.readLine();
             }
             reader.close();
-            System.out.println("Прочитано строк из файла: " + readLines.size());
+//            System.out.println("Прочитано строк из файла: " + readLines.size());
         } catch (IOException e) {
             throw new RuntimeException("Ошибка чтения файла '" + filename + "': " + e.getMessage());
         }
