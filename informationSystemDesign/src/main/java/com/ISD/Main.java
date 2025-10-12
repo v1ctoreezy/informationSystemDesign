@@ -8,6 +8,7 @@ import com.ISD.utils.SplitLines;
 import java.io.File;
 import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -16,27 +17,23 @@ import java.util.Scanner;
 public class Main {
     static Scanner scanner = new Scanner(System.in);
 
-     static void main(String[] args) {
-     // Кодировка для консоли
-     try {
-         System.setOut(new PrintStream(System.out, true, "UTF-8"));
-     } catch (UnsupportedEncodingException e) {
-         e.printStackTrace();
-     }
+public static void main(String[] args) {
+        // Кодировка для консоли
+    System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
     System.out.println("Выберите номер лабороторной работы");
-         System.out.print("Введите номер (2-5): ");
-         int numberLab = scanner.nextInt();
-     switch (numberLab) {
-         case 2: System.out.println("лабороторная работа не завершена");
-             break;
-         case 3: inputResultLab3();
-             break;
-         case 4: System.out.println("лабороторная работа не завершена");
-             break;
-         case 5: inputResultLab5();;
-             break;
-     }
+        System.out.print("Введите номер (2-5): ");
+        int numberLab = scanner.nextInt();
+        switch (numberLab) {
+            case 2: System.out.println("лабороторная работа не завершена");
+                break;
+            case 3: inputResultLab3();
+                break;
+            case 4: System.out.println("лабороторная работа не завершена");
+                break;
+            case 5: inputResultLab5();;
+                break;
+        }
     }
     public static void inputResultLab5() {
         final String RELATIVE_FILE_PATH = "filesRead/file_lab5.txt";
