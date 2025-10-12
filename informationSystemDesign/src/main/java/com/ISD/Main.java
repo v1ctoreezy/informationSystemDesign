@@ -2,22 +2,23 @@ package com.ISD;
 
 import com.ISD.lab5.*;
 import com.ISD.lab3.*;
+import com.ISD.lab2.*;
 import com.ISD.utils.DataReader;
 import com.ISD.utils.SplitLines;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Scanner;
+import java.text.DecimalFormat;
+import java.util.*;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
 
-public static void main(String[] args) {
+public static void main(String[] args) throws IOException {
         // Кодировка для консоли
     System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
@@ -25,7 +26,7 @@ public static void main(String[] args) {
         System.out.print("Введите номер (2-5): ");
         int numberLab = scanner.nextInt();
         switch (numberLab) {
-            case 2: System.out.println("лабороторная работа не завершена");
+            case 2: inputResultLab2();
                 break;
             case 3: inputResultLab3();
                 break;
@@ -35,6 +36,72 @@ public static void main(String[] args) {
                 break;
         }
     }
+    public static void inputResultLab2() throws IOException {
+        // Путь к файлу относительно проекта
+        String filePath = "filesRead/lab2Alt.txt";
+
+        // Получаем данные из файла
+        ArrayList<String> fileLines = documentReader(filePath);
+
+        if (fileLines == null) {
+            System.err.println("Не удалось прочитать файл. Завершаем выполнение.");
+            return;
+        }
+
+        System.out.println("Данные файла lab2Alt.txt");
+        System.out.println("|q  | |m  |");
+
+        List<Integer> errorInterval = new ArrayList<>();
+        List<Integer> errorNumber = new ArrayList<>();
+        int q = 1;
+
+        // Парсим данные из файла
+        for (String line : fileLines) {
+            try {
+                int interval = Integer.parseInt(line.trim());
+                errorInterval.add(interval);
+                errorNumber.add(q++);
+
+                // Форматируем вывод
+                DecimalFormat formatter = new DecimalFormat("00");
+                String formattedErrorNumber = formatter.format(errorNumber.get(errorNumber.size() - 1));
+                String formattedErrorInterval = formatter.format(errorInterval.get(errorInterval.size() - 1));
+
+                System.out.println("|" + formattedErrorNumber + " | |" + formattedErrorInterval + " |");
+            } catch (NumberFormatException e) {
+                System.err.println("Ошибка при парсинге строки: " + line);
+            }
+        }
+
+        // Считываем данные с консоли
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Укажите нижнюю границу интервала");
+            float a = in.nextFloat();
+            System.out.println("Укажите верхнюю границу интервала");
+            float b = in.nextFloat();
+            System.out.println("Укажите желаемую погрешность");
+            float e = in.nextFloat();
+
+            // Вычисляем общее количество ошибок
+            NumberOfErrors numberOfErrors = new NumberOfErrors();
+            float c = numberOfErrors.BugsCalc(a, b, e, errorInterval, errorNumber);
+
+            // Вычисляем коэффициент пропорциональности
+            ScaleFactor scaleFactor = new ScaleFactor();
+            float k1 = scaleFactor.ScaleFactorCalc(c, errorInterval, errorNumber);
+
+            // Вычисляем среднее время до появления ошибки
+            AverageErrorInterval averageErrorInterval = new AverageErrorInterval();
+            float t = averageErrorInterval.AverageErrorIntervalCalc(c, k1, errorInterval);
+
+            // Вычисляем время до начала тестирования
+            TestingStartTime testingStartTime = new TestingStartTime();
+            float tt = testingStartTime.TestingStartTimeCalc(c, k1, errorInterval, errorNumber);
+        } catch (InputMismatchException e) {
+            System.err.println("Ошибка ввода данных: " + e.getMessage());
+        }
+    }
+
     public static void inputResultLab5() {
         final String RELATIVE_FILE_PATH = "filesRead/file_lab5.txt";
         try{

@@ -1,4 +1,4 @@
-package org.example;
+package com.ISD.lab2;
 
 import java.util.List;
 
