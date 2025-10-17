@@ -1,0 +1,628 @@
+M D Eq: cern.colt.matrix.ObjectMatrix1D.equals(Object) is unusual  In <Unknown>
+M D Eq: cern.colt.matrix.ObjectMatrix3D.equals(Object) is unusual  In <Unknown>
+M D Eq: cern.colt.matrix.ObjectMatrix2D.equals(Object) is unusual  In <Unknown>
+M D Eq: cern.colt.list.ObjectArrayList.equals(Object) is unusual  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.impl.SparseDoubleMatrix2D$4.apply(int, double)  In <Unknown>
+H D FE: Test for floating point equality in cern.colt.matrix.impl.SparseDoubleMatrix2D$3.apply(int, double)  In <Unknown>
+H D FE: Test for floating point equality in cern.colt.matrix.impl.SparseDoubleMatrix2D$2.apply(int, double)  In <Unknown>
+M B CT: Exception thrown in class cern.jet.stat.quantile.Utils at new cern.jet.stat.quantile.Utils() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.list.DistinctNumberList inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.list.DistinctNumberList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.random.Hyperbolic is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Hyperbolic.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L B SnVI: cern.jet.random.StudentT is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.StudentT.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.StudentT at new cern.jet.random.StudentT(double, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L B SnVI: hep.aida.ref.FixedAxis is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class hep.aida.ref.FixedAxis at new hep.aida.ref.FixedAxis(int, double, double) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$12.compare(double, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$11.compare(DoubleMatrix2D, DoubleMatrix2D)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$10.compare(DoubleMatrix1D, DoubleMatrix1D)  In <Unknown>
+M V EI2: new cern.colt.list.adapter.FloatListAdapter(AbstractFloatList) may expose internal representation by storing an externally mutable object into FloatListAdapter.content  In <Unknown>
+L D RI: Class cern.colt.list.adapter.FloatListAdapter implements same interface as superclass  In <Unknown>
+L B SnVI: cern.jet.random.Zeta is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Zeta.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L P UPM: Private method cern.jet.math.Arithmetic.fac2(int) is never called  In <Unknown>
+L P UPM: Private method cern.jet.math.Arithmetic.fac1(int) is never called  In <Unknown>
+L P UPM: Private method cern.jet.math.Arithmetic.xlongBinomial(long, long) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Partitioning$2.compare(int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Partitioning$3.compare(int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Partitioning$4.compare(int, int)  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.engine.RandomSeedTable at new cern.jet.random.engine.RandomSeedTable() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M V EI2: new cern.colt.list.adapter.IntListAdapter(AbstractIntList) may expose internal representation by storing an externally mutable object into IntListAdapter.content  In <Unknown>
+L D RI: Class cern.colt.list.adapter.IntListAdapter implements same interface as superclass  In <Unknown>
+M V EI2: new cern.colt.list.adapter.LongListAdapter(AbstractLongList) may expose internal representation by storing an externally mutable object into LongListAdapter.content  In <Unknown>
+L D RI: Class cern.colt.list.adapter.LongListAdapter implements same interface as superclass  In <Unknown>
+L D DLS: Dead store to $L8 in cern.jet.stat.Gamma.gamma(double)  In <Unknown>
+M C FL: Using floating-point loop counters can lead to unexpected behavior.  In <Unknown>
+M C FL: Using floating-point loop counters can lead to unexpected behavior.  In <Unknown>
+L B Nm: The field name cern.jet.random.HyperGeometric.Mp is not conform to the naming convention. If final, it should be ALL_CAPS, otherwise lowerCamelCase.  In <Unknown>
+L B SnVI: cern.jet.random.HyperGeometric is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.HyperGeometric.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+H D FE: Test for floating point equality in cern.jet.random.HyperGeometric.hmdu(int, int, int, RandomEngine)  In <Unknown>
+L B SnVI: cern.colt.Timer is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L V MC: Overridable method reset is called from constructor new cern.colt.Timer().  In <Unknown>
+L B SnVI: cern.jet.random.ChiSquare is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.ChiSquare.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.ChiSquare at new cern.jet.random.ChiSquare(double, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L B CNT: Rough value of Math.PI/2 found: 1.57  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.Fun at new cern.jet.random.Fun() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M C FL: Using floating-point loop counters can lead to unexpected behavior.  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$2.compare(int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$6.compare(int, int)  In <Unknown>
+M B HE: hep.aida.bin.AbstractBin defines equals and uses Object.hashCode()  In <Unknown>
+L D FE: Test for floating point equality in hep.aida.bin.AbstractBin.equals(Object)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$4.compare(int, int)  In <Unknown>
+L B SnVI: cern.jet.random.Logarithmic is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Logarithmic.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+M V EI2: new cern.jet.stat.quantile.EquiDepthHistogram(float[]) may expose internal representation by storing an externally mutable object into EquiDepthHistogram.binBoundaries  In <Unknown>
+L B SnVI: cern.jet.stat.quantile.EquiDepthHistogram is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$8.compare(int, int)  In <Unknown>
+L B SnVI: cern.jet.random.engine.RandomSeedGenerator is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B Nm: The field name cern.jet.random.Beta.Dl is not conform to the naming convention. If final, it should be ALL_CAPS, otherwise lowerCamelCase.  In <Unknown>
+L B SnVI: cern.jet.random.Beta is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Beta.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+H D FE: Test for floating point equality in cern.jet.random.Beta.b00(double, double, RandomEngine)  In <Unknown>
+L B SnVI: cern.jet.random.Exponential is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Exponential.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.map.AbstractIntDoubleMap$5.apply(int, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.map.AbstractIntDoubleMap$6.apply(int, double)  In <Unknown>
+L B SnVI: cern.jet.random.Uniform is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D UC: Useless condition: it's always local$18 <= Long.MAX_VALUE because variable type is long  In <Unknown>
+L B SnVI: cern.jet.random.Empirical is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Empirical.xnBins() is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.Empirical at new cern.jet.random.Empirical(double[], int, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M V EI: cern.colt.bitvector.BitVector.elements() may expose internal representation by returning BitVector.bits  In <Unknown>
+M V EI2: cern.colt.bitvector.BitVector.elements(long[], int) may expose internal representation by storing an externally mutable object into BitVector.bits  In <Unknown>
+L B SnVI: cern.colt.bitvector.BitVector is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.bitvector.BitVector at new cern.colt.bitvector.BitVector(long[], int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B CT: Exception thrown in class cern.colt.bitvector.BitVector at new cern.colt.bitvector.BitVector(int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L B SnVI: cern.jet.random.BreitWigner is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.BreitWigner.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L B SnVI: cern.jet.random.BreitWignerMeanSquare is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.BreitWignerMeanSquare.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L B SnVI: cern.jet.random.VonMises is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.VonMises.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.VonMises at new cern.jet.random.VonMises(double, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.Sorting.mergeSort2(double[], int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.Sorting.mergeSort2(float[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(byte[], byte, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(char[], char, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(double[], double, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(float[], float, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(int[], int, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(long[], long, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(Object[], Object, int, int, Comparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.binarySearchFromTo(short[], short, int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(byte[], byte[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(byte[], byte[], int, int, ByteComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(char[], char[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(char[], char[], int, int, CharComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(double[], double[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(double[], double[], int, int, DoubleComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(float[], float[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(float[], float[], int, int, FloatComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(int[], int[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(int[], int[], int, int, IntComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(long[], long[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(long[], long[], int, int, LongComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(short[], short[], int, int)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSort1(short[], short[], int, int, ShortComparator)  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.Sorting.mergeSortInPlace(int[], int, int)  In <Unknown>
+L B SnVI: cern.jet.random.PoissonSlow is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.PoissonSlow.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.random.PoissonSlow.setMean(double)  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedSparseDoubleMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedSparseDoubleMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.random.EmpiricalWalker is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.EmpiricalWalker at new cern.jet.random.EmpiricalWalker(double[], int, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.impl.TestMatrix2D$5.compare(DoubleMatrix2D, DoubleMatrix2D)  In <Unknown>
+L B SnVI: cern.jet.random.engine.DRand is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.random.ExponentialPower is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.ExponentialPower.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.ExponentialPower at new cern.jet.random.ExponentialPower(double, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M D INT: Vacuous iand operation on $L1 in cern.jet.random.engine.MersenneTwister.setSeed(int)  In <Unknown>
+M D INT: Vacuous iand operation on <Unknown> in cern.jet.random.engine.MersenneTwister.setSeed(int)  In <Unknown>
+L B SnVI: cern.jet.random.engine.MersenneTwister is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.random.Binomial is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Binomial.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L P UPM: Private method cern.jet.random.Binomial.cdfSlow(int) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.Binomial at new cern.jet.random.Binomial(int, double, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedDenseObjectMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedDenseObjectMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.map.QuickOpenIntIntHashMap inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.map.QuickOpenIntIntHashMap is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B PA: Primitive field cern.colt.map.QuickOpenIntIntHashMap.totalProbesSaved is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.Distributions at new cern.jet.random.Distributions() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M V EI2: new cern.colt.list.adapter.DoubleListAdapter(AbstractDoubleList) may expose internal representation by storing an externally mutable object into DoubleListAdapter.content  In <Unknown>
+L D RI: Class cern.colt.list.adapter.DoubleListAdapter implements same interface as superclass  In <Unknown>
+L B SnVI: cern.jet.random.engine.MersenneTwister64 is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D DLS: Dead store to $L1 in cern.jet.math.IntFunctions$2.apply(int)  In <Unknown>
+L D DLS: Useless assignment in return from cern.jet.math.IntFunctions$2.apply(int)  In <Unknown>
+L C DLS: Useless increment in return from cern.jet.math.IntFunctions$5.apply(int)  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D$5 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix2D$5 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D$4 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix2D$4 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D$6 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix2D$6 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D$1 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix2D$1 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D$3 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix2D$3 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D$2 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix2D$2 is serializable and an inner class  In <Unknown>
+M P SBSC: corejava.Format.fixedFormat(double) concatenates strings using + in a loop  In <Unknown>
+M B CT: Exception thrown in class corejava.Format at new corejava.Format(String) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.map.AbstractDoubleIntMap$10.compare(int, int)  In <Unknown>
+L P UPM: Private method cern.colt.GenericSorting.rotate(int, int, int, Swapper) is never called  In <Unknown>
+L B SnVI: cern.jet.random.Gamma is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Gamma.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L D DLS: Dead store to $L7 in cern.jet.random.Gamma.nextDouble(double, double)  In <Unknown>
+H C RV: new IllegalArgumentException() not thrown in cern.jet.random.Gamma.nextDouble(double, double)  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.Gamma at new cern.jet.random.Gamma(double, double, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B CN: cern.colt.list.FloatArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.FloatArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI2: cern.colt.list.FloatArrayList.elements(float[]) may expose internal representation by storing an externally mutable object into FloatArrayList.elements  In <Unknown>
+M V EI: cern.colt.list.FloatArrayList.elements() may expose internal representation by returning FloatArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.FloatArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.FloatArrayList.equals(Object)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.FloatArrayList.indexOfFromTo(float, int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.FloatArrayList.lastIndexOfFromTo(float, int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.GenericSortingTest$4.compare(int, int)  In <Unknown>
+M B HE: cern.colt.list.AbstractLongList defines equals and uses Object.hashCode()  In <Unknown>
+M B CN: cern.colt.list.BooleanArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.BooleanArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI: cern.colt.list.BooleanArrayList.elements() may expose internal representation by returning BooleanArrayList.elements  In <Unknown>
+M V EI2: cern.colt.list.BooleanArrayList.elements(boolean[]) may expose internal representation by storing an externally mutable object into BooleanArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.BooleanArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+H B DMI: Random object created and used only once in cern.jet.random.engine.Benchmark.benchmark(int)  In <Unknown>
+M D UC: Useless object stored in variable var$2 of method cern.jet.random.engine.Benchmark.benchmark(int)  In <Unknown>
+M D UC: Useless object stored in variable var$2 of method cern.jet.random.engine.Benchmark.benchmark(int)  In <Unknown>
+M D UC: Useless object stored in variable var$2 of method cern.jet.random.engine.Benchmark.benchmark(int)  In <Unknown>
+L P UPM: Private method cern.jet.random.engine.Benchmark.xtestRandomFromTo(long, long, int) is never called  In <Unknown>
+L D DLS: Dead store to $L1 in cern.jet.random.engine.Benchmark.main(String[])  In <Unknown>
+L D DLS: Dead store to $L5 in cern.jet.random.engine.Benchmark.xtestRandomFromTo(long, long, int)  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.engine.Benchmark at new cern.jet.random.engine.Benchmark() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+H B HE: cern.colt.list.ObjectArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI: cern.colt.list.ObjectArrayList.elements() may expose internal representation by returning ObjectArrayList.elements  In <Unknown>
+M V EI2: cern.colt.list.ObjectArrayList.elements(Object[]) may expose internal representation by storing an externally mutable object into ObjectArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.ObjectArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M D IM: Computation of average could overflow in cern.colt.list.ObjectArrayList.binarySearchFromTo(Object, int, int)  In <Unknown>
+M B HE: cern.colt.list.AbstractDoubleList defines equals and uses Object.hashCode()  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.AbstractDoubleList.equals(Object)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.AbstractDoubleList.indexOfFromTo(double, int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.AbstractDoubleList.lastIndexOfFromTo(double, int, int)  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix1D$4 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix1D$4 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix1D$3 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix1D$3 is serializable and an inner class  In <Unknown>
+L B SnVI: hep.aida.ref.VariableAxis is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class hep.aida.ref.VariableAxis at new hep.aida.ref.VariableAxis(double[]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedDenseDoubleMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedDenseDoubleMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix1D$2 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix1D$2 is serializable and an inner class  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix1D$1 inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: cern.colt.matrix.impl.WrapperDoubleMatrix1D$1 is serializable and an inner class  In <Unknown>
+M B CN: cern.colt.list.DoubleArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.DoubleArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI2: cern.colt.list.DoubleArrayList.elements(double[]) may expose internal representation by storing an externally mutable object into DoubleArrayList.elements  In <Unknown>
+M V EI: cern.colt.list.DoubleArrayList.elements() may expose internal representation by returning DoubleArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.DoubleArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.DoubleArrayList.equals(Object)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.DoubleArrayList.indexOfFromTo(double, int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.DoubleArrayList.lastIndexOfFromTo(double, int, int)  In <Unknown>
+L B SnVI: cern.jet.random.Poisson is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Poisson.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+M B CN: cern.colt.list.LongArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.LongArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI: cern.colt.list.LongArrayList.elements() may expose internal representation by returning LongArrayList.elements  In <Unknown>
+M V EI2: cern.colt.list.LongArrayList.elements(long[]) may expose internal representation by storing an externally mutable object into LongArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.LongArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CN: cern.colt.list.IntArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.IntArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI: cern.colt.list.IntArrayList.elements() may expose internal representation by returning IntArrayList.elements  In <Unknown>
+M V EI2: cern.colt.list.IntArrayList.elements(int[]) may expose internal representation by storing an externally mutable object into IntArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.IntArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CN: cern.colt.list.ByteArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.ByteArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI2: cern.colt.list.ByteArrayList.elements(byte[]) may expose internal representation by storing an externally mutable object into ByteArrayList.elements  In <Unknown>
+M V EI: cern.colt.list.ByteArrayList.elements() may expose internal representation by returning ByteArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.ByteArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.random.Normal is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.Normal.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.random.Normal.nextDouble(double, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.random.Normal.setState(double, double)  In <Unknown>
+M B HE: cern.colt.map.AbstractIntDoubleMap defines equals and uses Object.hashCode()  In <Unknown>
+M B HE: cern.colt.matrix.DoubleMatrix1D defines equals and uses Object.hashCode()  In <Unknown>
+L P UPM: Private method cern.colt.matrix.DoubleMatrix1D.xforEach(DoubleProcedure) is never called  In <Unknown>
+L P UPM: Private method cern.jet.stat.Descriptive.covariance2(DoubleArrayList, DoubleArrayList) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.stat.Descriptive.frequencies(DoubleArrayList, DoubleArrayList, IntArrayList)  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.stat.Descriptive.rankInterpolated(DoubleArrayList, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.stat.Descriptive.split(DoubleArrayList, DoubleArrayList)  In <Unknown>
+M B HE: cern.colt.matrix.DoubleMatrix2D defines equals and uses Object.hashCode()  In <Unknown>
+L P UPM: Private method cern.colt.matrix.DoubleMatrix2D.xforEach(DoubleProcedure) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.DoubleMatrix2D.forEachNonZero(IntIntDoubleFunction)  In <Unknown>
+M V FI: cern.colt.matrix.linalg.Smp.finalize() is public; should be protected  In <Unknown>
+L D PZLA: Should cern.colt.matrix.linalg.Smp.splitBlockedNN(DoubleMatrix2D, int, long) return a zero length array rather than null?  In <Unknown>
+L D PZLA: Should cern.colt.matrix.linalg.Smp.splitStridedNN(DoubleMatrix2D, int, long) return a zero length array rather than null?  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedSparseDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedSparseDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.ObjectMatrix3D defines equals and uses Object.hashCode()  In <Unknown>
+L P UPM: Private method cern.colt.matrix.ObjectMatrix3D.xforEachCoordinate(IntIntIntProcedure) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.ObjectMatrix3D.xforEach(ObjectProcedure) is never called  In <Unknown>
+M B HE: cern.colt.matrix.ObjectMatrix2D defines equals and uses Object.hashCode()  In <Unknown>
+L P UPM: Private method cern.colt.matrix.ObjectMatrix2D.xforEach(ObjectProcedure) is never called  In <Unknown>
+L B SnVI: cern.jet.random.sampling.RandomSampler is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.sampling.RandomSampler at new cern.jet.random.sampling.RandomSampler(long, long, long, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L B SnVI: hep.aida.ref.Histogram1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D RI: Class hep.aida.ref.Histogram1D implements same interface as superclass  In <Unknown>
+L B SnVI: cern.jet.random.sampling.WeightedRandomSampler is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.sampling.WeightedRandomSampler.xsampleNextElements(BooleanArrayList) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.sampling.WeightedRandomSampler at new cern.jet.random.sampling.WeightedRandomSampler() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.sampling.WeightedRandomSampler at new cern.jet.random.sampling.WeightedRandomSampler(int, RandomEngine) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D DLS: Dead store to $L4 in cern.colt.matrix.impl.AbstractFormatter.alignRow(String[], int[], int[])  In <Unknown>
+L B SnVI: cern.jet.stat.quantile.DoubleBuffer is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedDenseDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedDenseDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.WrapperDoubleMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.DelegateDoubleMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.DelegateDoubleMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DelegateDoubleMatrix1D at new cern.colt.matrix.impl.DelegateDoubleMatrix1D(DoubleMatrix2D, int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.map.AbstractIntObjectMap defines equals and uses Object.hashCode()  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedSparseObjectMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedSparseObjectMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.ObjectMatrix1D defines equals and uses Object.hashCode()  In <Unknown>
+L P UPM: Private method cern.colt.matrix.ObjectMatrix1D.xforEach(ObjectProcedure) is never called  In <Unknown>
+M B HE: cern.colt.matrix.impl.SparseDoubleMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SparseDoubleMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.random.sampling.RandomSamplingAssistant is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.sampling.RandomSamplingAssistant.xsampleNextElements(BooleanArrayList) is never called  In <Unknown>
+L D DLS: Dead store to $L4 in cern.jet.random.sampling.RandomSamplingAssistant.testArraySampling(int, int)  In <Unknown>
+L V MC: Overridable method fetchNextBlock is called from constructor new cern.jet.random.sampling.RandomSamplingAssistant(long, long, RandomEngine).  In <Unknown>
+M B HE: hep.aida.bin.StaticBin1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B Se: The field hep.aida.bin.StaticBin1D.arguments is transient but isn't set by deserialization  In <Unknown>
+M B SnVI: hep.aida.bin.StaticBin1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L V MC: Overridable method clear is called from constructor new hep.aida.bin.StaticBin1D().  In <Unknown>
+M B HE: cern.colt.matrix.impl.DenseDoubleMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.DenseDoubleMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DenseDoubleMatrix1D at new cern.colt.matrix.impl.DenseDoubleMatrix1D(double[]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedSparseObjectMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedSparseObjectMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.stat.quantile.DoubleBufferSet is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedDenseObjectMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedDenseObjectMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.colt.matrix.objectalgo.Formatter is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.DenseObjectMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.DenseObjectMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DenseObjectMatrix1D at new cern.colt.matrix.impl.DenseObjectMatrix1D(Object[]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.matrix.impl.DenseObjectMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.DenseObjectMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DenseObjectMatrix2D at new cern.colt.matrix.impl.DenseObjectMatrix2D(Object[][]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L B SnVI: hep.aida.ref.Histogram2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D RI: Class hep.aida.ref.Histogram2D implements same interface as superclass  In <Unknown>
+M B HE: cern.colt.matrix.impl.SparseObjectMatrix1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SparseObjectMatrix1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M D UC: Useless condition: it's known that local$2 >= 3 at this point  In <Unknown>
+M B HE: hep.aida.bin.MightyStaticBin1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: hep.aida.bin.MightyStaticBin1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in hep.aida.bin.MightyStaticBin1D.xequals(Object)  In <Unknown>
+L V MC: Overridable method clear is called from constructor new hep.aida.bin.MightyStaticBin1D(boolean, boolean, int).  In <Unknown>
+L D DLS: Dead store to $L6 in cern.jet.stat.quantile.DoubleQuantileEstimator.quantileElements(DoubleArrayList)  In <Unknown>
+M B HE: cern.colt.matrix.impl.SparseObjectMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SparseObjectMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.colt.matrix.ObjectFactory2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.SparseDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SparseDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.colt.matrix.DoubleFactory1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.DenseDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DenseDoubleMatrix2D at new cern.colt.matrix.impl.DenseDoubleMatrix2D(double[][]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L B SnVI: cern.jet.stat.quantile.UnknownDoubleQuantileEstimator is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L V MC: Overridable method clear is called from constructor new cern.jet.stat.quantile.UnknownDoubleQuantileEstimator(int, int, int, double, RandomEngine).  In <Unknown>
+L B SnVI: hep.aida.ref.Histogram3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D RI: Class hep.aida.ref.Histogram3D implements same interface as superclass  In <Unknown>
+L B SnVI: cern.jet.stat.quantile.KnownDoubleQuantileEstimator is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L V MC: Overridable method clear is called from constructor new cern.jet.stat.quantile.KnownDoubleQuantileEstimator(int, int, long, double, RandomEngine).  In <Unknown>
+L D UC: Useless condition: it's always local$18 <= Long.MAX_VALUE because variable type is long  In <Unknown>
+L B SnVI: cern.colt.matrix.DoubleFactory2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.colt.matrix.linalg.Property is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D DLS: Dead store to $L3 in cern.colt.matrix.linalg.Property.isDiagonallyDominantByColumn(DoubleMatrix2D)  In <Unknown>
+L D DLS: Dead store to $L3 in cern.colt.matrix.linalg.Property.isDiagonallyDominantByRow(DoubleMatrix2D)  In <Unknown>
+L D DLS: Dead store to $L5 in cern.colt.matrix.linalg.Property.isSkewSymmetric(DoubleMatrix2D)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.linalg.Property.equals(DoubleMatrix1D, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.linalg.Property.equals(DoubleMatrix1D, DoubleMatrix1D)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.linalg.Property.equals(DoubleMatrix2D, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.linalg.Property.equals(DoubleMatrix2D, DoubleMatrix2D)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.linalg.Property.equals(DoubleMatrix3D, double)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.linalg.Property.equals(DoubleMatrix3D, DoubleMatrix3D)  In <Unknown>
+M V EI: cern.colt.matrix.linalg.SingularValueDecomposition.getSingularValues() may expose internal representation by returning SingularValueDecomposition.s  In <Unknown>
+H D NS: Potentially dangerous use of non-short-circuit logic in new cern.colt.matrix.linalg.SingularValueDecomposition(DoubleMatrix2D)  In <Unknown>
+L D NS: Questionable use of non-short-circuit logic in new cern.colt.matrix.linalg.SingularValueDecomposition(DoubleMatrix2D)  In <Unknown>
+M B HE: cern.colt.matrix.DoubleMatrix3D defines equals and uses Object.hashCode()  In <Unknown>
+L P UPM: Private method cern.colt.matrix.DoubleMatrix3D.xforEach(DoubleProcedure) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.DoubleMatrix3D.xforEachCoordinate(IntIntIntProcedure) is never called  In <Unknown>
+M V EI: cern.colt.matrix.linalg.CholeskyDecomposition.getL() may expose internal representation by returning CholeskyDecomposition.L  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.CholeskyDecomposition.XXXsolveBuggy(DoubleMatrix2D) is never called  In <Unknown>
+L D DLS: Dead store to $L4 in cern.colt.matrix.linalg.CholeskyDecomposition.XXXsolveBuggy(DoubleMatrix2D)  In <Unknown>
+L D FE: Test for floating point equality in new cern.colt.matrix.linalg.CholeskyDecomposition(DoubleMatrix2D)  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.linalg.Diagonal at new cern.colt.matrix.linalg.Diagonal() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D NS: Questionable use of non-short-circuit logic in cern.colt.matrix.linalg.EigenvalueDecomposition.hqr2()  In <Unknown>
+L B Se: The field cern.colt.matrix.linalg.EigenvalueDecomposition.cdivr is transient but isn't set by deserialization  In <Unknown>
+L B Se: The field cern.colt.matrix.linalg.EigenvalueDecomposition.cdivi is transient but isn't set by deserialization  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedDenseDoubleMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedDenseDoubleMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.DenseDoubleMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.DenseDoubleMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DenseDoubleMatrix3D at new cern.colt.matrix.impl.DenseDoubleMatrix3D(double[][][]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M V EI2: cern.colt.matrix.linalg.LUDecompositionQuick.decompose(DoubleMatrix2D, int) may expose internal representation by storing an externally mutable object into LUDecompositionQuick.LU  In <Unknown>
+M V EI2: cern.colt.matrix.linalg.LUDecompositionQuick.decompose(DoubleMatrix2D) may expose internal representation by storing an externally mutable object into LUDecompositionQuick.LU  In <Unknown>
+M V EI: cern.colt.matrix.linalg.LUDecompositionQuick.getPivot() may expose internal representation by returning LUDecompositionQuick.piv  In <Unknown>
+M V EI2: cern.colt.matrix.linalg.LUDecompositionQuick.setLU(DoubleMatrix2D) may expose internal representation by storing an externally mutable object into LUDecompositionQuick.LU  In <Unknown>
+L B Se: The field cern.colt.matrix.linalg.LUDecompositionQuick.work2 is transient but isn't set by deserialization  In <Unknown>
+L B Se: The field cern.colt.matrix.linalg.LUDecompositionQuick.work1 is transient but isn't set by deserialization  In <Unknown>
+L B Se: The field cern.colt.matrix.linalg.LUDecompositionQuick.workDouble is transient but isn't set by deserialization  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.LUDecompositionQuick.xgetDoublePivot() is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.LUDecompositionQuick.solveOld(DoubleMatrix2D) is never called  In <Unknown>
+H D FE: Test for floating point equality in cern.colt.matrix.linalg.LUDecompositionQuick.solveOld(DoubleMatrix2D)  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.LUDecomposition.getDoublePivot() is never called  In <Unknown>
+L B SnVI: cern.colt.matrix.doublealgo.Formatter is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.colt.matrix.doublealgo.Formatter.xtoTitleString(DoubleMatrix3D, String[], String[], String[], String, String, String, String) is never called  In <Unknown>
+L D DLS: Dead store to $L6 in cern.colt.matrix.doublealgo.Formatter.demo1()  In <Unknown>
+L D DLS: Dead store to $L11 in cern.colt.matrix.doublealgo.Formatter.toTitleString(DoubleMatrix2D, String[], String[], String, String, String, BinFunction1D[])  In <Unknown>
+M B HE: hep.aida.bin.QuantileBin1D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: hep.aida.bin.QuantileBin1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L V MC: Overridable method clear is called from constructor new hep.aida.bin.QuantileBin1D(boolean, long, double, double, int, RandomEngine, boolean, boolean, int).  In <Unknown>
+H B HE: hep.aida.bin.DynamicBin1D defines equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: hep.aida.bin.DynamicBin1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method hep.aida.bin.DynamicBin1D.frequencyMap() is never called  In <Unknown>
+L V MC: Overridable method clear is called from constructor new hep.aida.bin.DynamicBin1D().  In <Unknown>
+L P UPM: Private method cern.colt.matrix.doublealgo.Statistic.xdistanceOld(DoubleMatrix2D, int) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.doublealgo.Statistic.xdistanceOld2(DoubleMatrix2D, int) is never called  In <Unknown>
+M B CN: cern.colt.matrix.linalg.Algebra.clone() does not call super.clone()  In <Unknown>
+M V EI: cern.colt.matrix.linalg.Algebra.property() may expose internal representation by returning Algebra.property  In <Unknown>
+M V EI2: cern.colt.matrix.linalg.Algebra.setProperty(Property) may expose internal representation by storing an externally mutable object into Algebra.property  In <Unknown>
+L B SnVI: cern.colt.matrix.linalg.Algebra is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.Algebra.subMatrix(DoubleMatrix2D, int[], int, int) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.Algebra.xpowSlow(DoubleMatrix2D, int) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.Algebra.eig(DoubleMatrix2D) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.Algebra.chol(DoubleMatrix2D) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.Algebra.xmultOuter(DoubleMatrix1D, DoubleMatrix1D) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.Algebra.subMatrix(DoubleMatrix2D, int, int, int[]) is never called  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.linalg.Algebra at new cern.colt.matrix.linalg.Algebra(double) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.linalg.Algebra at new cern.colt.matrix.linalg.Algebra() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedSparseDoubleMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedSparseDoubleMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.SparseDoubleMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SparseDoubleMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.WrapperDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.WrapperDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedDenseObjectMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedDenseObjectMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.SelectedSparseObjectMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SelectedSparseObjectMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.colt.matrix.linalg.SmpBlas.xsum(DoubleMatrix2D) is never called  In <Unknown>
+M B PA: Primitive field cern.colt.matrix.linalg.SmpBlas.smpBlas is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.  In <Unknown>
+M B HE: cern.colt.map.AbstractLongObjectMap defines equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.doublealgo.Transform is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.colt.matrix.DoubleFactory3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.map.AbstractDoubleIntMap defines equals and uses Object.hashCode()  In <Unknown>
+M B HE: cern.colt.matrix.impl.TridiagonalDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+M D SF: Switch statement found in cern.colt.matrix.impl.TridiagonalDoubleMatrix2D.forEachNonZero(IntIntDoubleFunction) where one case falls through to the next case  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.TridiagonalDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.impl.TridiagonalDoubleMatrix2D.forEachNonZero(IntIntDoubleFunction)  In <Unknown>
+M B SnVI: cern.colt.matrix.doublealgo.Sorting is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D DLS: Dead store to $L5 in cern.colt.matrix.doublealgo.Sorting.zdemo5(int, int, boolean)  In <Unknown>
+L D DLS: Dead store to $L0 in cern.colt.matrix.doublealgo.Sorting.zdemo6()  In <Unknown>
+L D DLS: Dead store to $L3 in cern.colt.matrix.doublealgo.Sorting.zdemo7(int, int, boolean)  In <Unknown>
+M B PA: Primitive field cern.colt.matrix.bench.Double2DProcedure.A is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.  In <Unknown>
+M B PA: Primitive field cern.colt.matrix.bench.Double2DProcedure.B is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.  In <Unknown>
+M B PA: Primitive field cern.colt.matrix.bench.Double2DProcedure.C is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.  In <Unknown>
+M B PA: Primitive field cern.colt.matrix.bench.Double2DProcedure.D is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.  In <Unknown>
+M B HE: cern.colt.matrix.impl.SparseObjectMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.SparseObjectMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.map.AbstractIntIntMap defines equals and uses Object.hashCode()  In <Unknown>
+M B HE: cern.colt.matrix.impl.DenseObjectMatrix3D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.DenseObjectMatrix3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.DenseObjectMatrix3D at new cern.colt.matrix.impl.DenseObjectMatrix3D(Object[][][]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.jet.random.Benchmark.main(String[])  In <Unknown>
+L B SnVI: cern.jet.random.Benchmark is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.jet.random.Benchmark at new cern.jet.random.Benchmark() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.colt.matrix.impl.Benchmark.main(String[])  In <Unknown>
+L D DLS: Dead store to $L11 in cern.colt.matrix.impl.Benchmark.benchmark(int, int, String, boolean, int, double, double, double)  In <Unknown>
+L D DLS: Dead store to $L3 in cern.colt.matrix.impl.Benchmark.main(String[])  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.Benchmark at new cern.colt.matrix.impl.Benchmark() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.colt.matrix.bench.BenchmarkMatrix.bench_dgemm(String[])  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.colt.matrix.bench.BenchmarkMatrix.bench_dgemv(String[])  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.colt.matrix.bench.BenchmarkMatrix.bench_pow(String[])  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.colt.matrix.bench.BenchmarkMatrix.benchGeneric(Double2DProcedure, String[])  In <Unknown>
+L D DLS: Dead store to $L13 in cern.colt.matrix.bench.BenchmarkMatrix.run(double, String, Double2DProcedure, String[], int[], double[])  In <Unknown>
+L D DLS: Dead store to $L9 in cern.colt.matrix.bench.BenchmarkMatrix.runSpecial(double, String, Double2DProcedure)  In <Unknown>
+L D REC: Exception is caught when Exception is not thrown in cern.colt.matrix.bench.BenchmarkMatrix.bench_dgemm(String[])  In <Unknown>
+L D REC: Exception is caught when Exception is not thrown in cern.colt.matrix.bench.BenchmarkMatrix.bench_pow(String[])  In <Unknown>
+L D REC: Exception is caught when Exception is not thrown in cern.colt.matrix.bench.BenchmarkMatrix.benchGeneric(Double2DProcedure, String[])  In <Unknown>
+L D REC: Exception is caught when Exception is not thrown in cern.colt.matrix.bench.BenchmarkMatrix.bench_dgemv(String[])  In <Unknown>
+H I Dm: Found reliance on default encoding in cern.colt.matrix.bench.BenchmarkMatrix.main(String[]): new java.io.FileReader(String)  In <Unknown>
+M B HE: cern.colt.map.OpenIntDoubleHashMap inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.map.OpenIntDoubleHashMap is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.map.OpenIntDoubleHashMap.indexOfValue(double)  In <Unknown>
+M V EI2: new cern.colt.buffer.DoubleBuffer2D(DoubleBuffer2DConsumer, int) may expose internal representation by storing an externally mutable object into DoubleBuffer2D.target  In <Unknown>
+L B SnVI: cern.colt.buffer.DoubleBuffer2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M V EI2: new cern.colt.buffer.DoubleBuffer3D(DoubleBuffer3DConsumer, int) may expose internal representation by storing an externally mutable object into DoubleBuffer3D.target  In <Unknown>
+L B SnVI: cern.colt.buffer.DoubleBuffer3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.colt.matrix.impl.BenchmarkMatrix2D.main(String[])  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.BenchmarkMatrix2D at new cern.colt.matrix.impl.BenchmarkMatrix2D() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.map.OpenLongObjectHashMap inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.map.OpenLongObjectHashMap is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.list.AbstractBooleanList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI2: new cern.colt.buffer.ObjectBuffer(ObjectBufferConsumer, int) may expose internal representation by storing an externally mutable object into ObjectBuffer.target  In <Unknown>
+L B SnVI: cern.colt.buffer.ObjectBuffer is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M V EI2: new cern.colt.buffer.DoubleBuffer(DoubleBufferConsumer, int) may expose internal representation by storing an externally mutable object into DoubleBuffer.target  In <Unknown>
+L B SnVI: cern.colt.buffer.DoubleBuffer is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.list.AbstractByteList defines equals and uses Object.hashCode()  In <Unknown>
+M B HE: cern.colt.matrix.impl.RCMDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.RCMDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CN: cern.colt.list.CharArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.CharArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI: cern.colt.list.CharArrayList.elements() may expose internal representation by returning CharArrayList.elements  In <Unknown>
+M V EI2: cern.colt.list.CharArrayList.elements(char[]) may expose internal representation by storing an externally mutable object into CharArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.CharArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: hep.aida.bin.AbstractBin1D defines equals and uses Object.hashCode()  In <Unknown>
+L D FE: Test for floating point equality in hep.aida.bin.AbstractBin1D.equals(Object)  In <Unknown>
+M B HE: cern.colt.map.OpenIntIntHashMap inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.map.OpenIntIntHashMap is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.list.SimpleLongArrayList inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.list.SimpleLongArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.list.SimpleLongArrayList at new cern.colt.list.SimpleLongArrayList(int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B CT: Exception thrown in class cern.colt.list.SimpleLongArrayList at new cern.colt.list.SimpleLongArrayList() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+L D DLS: Dead store to $L5 in cern.colt.map.Benchmark.test2(int)  In <Unknown>
+M B CN: cern.colt.list.ShortArrayList.clone() does not call super.clone()  In <Unknown>
+H B HE: cern.colt.list.ShortArrayList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI2: cern.colt.list.ShortArrayList.elements(short[]) may expose internal representation by storing an externally mutable object into ShortArrayList.elements  In <Unknown>
+M V EI: cern.colt.list.ShortArrayList.elements() may expose internal representation by returning ShortArrayList.elements  In <Unknown>
+L B SnVI: cern.colt.list.ShortArrayList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.jet.stat.quantile.ExactDoubleQuantileFinder is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L V MC: Overridable method clear is called from constructor new cern.jet.stat.quantile.ExactDoubleQuantileFinder().  In <Unknown>
+M D UC: Useless object stored in variable var$2 of method cern.colt.matrix.impl.TestMatrix2D.doubleTest15(int, int)  In <Unknown>
+M D UC: Useless object stored in variable var$3 of method cern.colt.matrix.impl.TestMatrix2D.doubleTest14(int, int, int)  In <Unknown>
+L D DLS: Dead store to $L3 in cern.colt.matrix.impl.TestMatrix2D.doubleTest14(int, int, int)  In <Unknown>
+L D DLS: Dead store to $L2 in cern.colt.matrix.impl.TestMatrix2D.doubleTest15(int, int)  In <Unknown>
+L D DLS: Dead store to $L15 in cern.colt.matrix.impl.TestMatrix2D.doubleTest23(int, int, double, boolean)  In <Unknown>
+L D DLS: Dead store to $L15 in cern.colt.matrix.impl.TestMatrix2D.doubleTest24(int, int, boolean)  In <Unknown>
+L D DLS: Dead store to $L7 in cern.colt.matrix.impl.TestMatrix2D.doubleTest26(int)  In <Unknown>
+L D DLS: Dead store to $L10 in cern.colt.matrix.impl.TestMatrix2D.doubleTest27()  In <Unknown>
+L D DLS: Dead store to $L5 in cern.colt.matrix.impl.TestMatrix2D.doubleTest29(int, DoubleFactory2D)  In <Unknown>
+L D DLS: Dead store to $L3 in cern.colt.matrix.impl.TestMatrix2D.doubleTest30(int, int)  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.TestMatrix2D at new cern.colt.matrix.impl.TestMatrix2D() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M D UC: Useless object stored in variable var$4 of method new cern.colt.matrix.linalg.QRDecomposition(DoubleMatrix2D)  In <Unknown>
+L B Nm: The field name cern.colt.matrix.linalg.QRDecomposition.Rdiag is not conform to the naming convention. If final, it should be ALL_CAPS, otherwise lowerCamelCase.  In <Unknown>
+L D DLS: Dead store to $L2 in new cern.colt.matrix.linalg.QRDecomposition(DoubleMatrix2D)  In <Unknown>
+L D DLS: Dead store to $L2 in cern.colt.matrix.linalg.QRDecomposition.solve(DoubleMatrix2D)  In <Unknown>
+L B SnVI: cern.jet.random.NegativeBinomial is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.jet.random.NegativeBinomial.xstaticSetRandomGenerator(RandomEngine) is never called  In <Unknown>
+L D DLS: Dead store to $L6 in cern.jet.random.NegativeBinomial.nextInt(int, double)  In <Unknown>
+M B HE: cern.colt.map.OpenDoubleIntHashMap inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.map.OpenDoubleIntHashMap is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.map.OpenDoubleIntHashMap.indexOfInsertion(double)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.map.OpenDoubleIntHashMap.indexOfKey(double)  In <Unknown>
+L P UPM: Private method cern.colt.matrix.doublealgo.Partitioning.xPartitionOld(DoubleMatrix2D, DoubleMatrix1D, int, int, double[], int, int, int[]) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.doublealgo.Partitioning.xPartitionOld(DoubleMatrix2D, DoubleMatrix1D, int, int, double) is never called  In <Unknown>
+M B HE: cern.colt.list.AbstractFloatList defines equals and uses Object.hashCode()  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.AbstractFloatList.equals(Object)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.AbstractFloatList.indexOfFromTo(float, int, int)  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.list.AbstractFloatList.lastIndexOfFromTo(float, int, int)  In <Unknown>
+M V EI2: new cern.colt.buffer.IntBuffer2D(IntBuffer2DConsumer, int) may expose internal representation by storing an externally mutable object into IntBuffer2D.target  In <Unknown>
+L B SnVI: cern.colt.buffer.IntBuffer2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.list.MinMaxNumberList inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.list.MinMaxNumberList is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L B SnVI: cern.colt.matrix.ObjectFactory3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.list.AbstractIntList defines equals and uses Object.hashCode()  In <Unknown>
+M V EI2: new cern.colt.buffer.IntBuffer3D(IntBuffer3DConsumer, int) may expose internal representation by storing an externally mutable object into IntBuffer3D.target  In <Unknown>
+L B SnVI: cern.colt.buffer.IntBuffer3D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+H P Bx: Boxing/unboxing to parse a primitive cern.jet.stat.quantile.QuantileFinderTest.testQuantileCalculation(String[])  In <Unknown>
+M D UC: Useless object stored in variable var$0 of method cern.jet.stat.quantile.QuantileFinderTest.testRank()  In <Unknown>
+L D DLS: Dead store to $L2 in cern.jet.stat.quantile.QuantileFinderTest.testQuantileCalculation(String[])  In <Unknown>
+L D DLS: Dead store to $L0 in cern.jet.stat.quantile.QuantileFinderTest.testRank()  In <Unknown>
+L D FE: Test for floating point equality in cern.jet.stat.quantile.QuantileFinderTest.binaryMultiSearch(DoubleArrayList, double)  In <Unknown>
+H D RV: Return value of cern.colt.list.DoubleArrayList.get(int) ignored, but method has no side effect  In <Unknown>
+H D UC: Method cern.jet.stat.quantile.QuantileFinderTest.testRank() seems to be useless  In <Unknown>
+L B SnVI: cern.colt.matrix.ObjectFactory1D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B HE: cern.colt.matrix.impl.RCDoubleMatrix2D inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.impl.RCDoubleMatrix2D is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.impl.RCDoubleMatrix2D.forEachNonZero(IntIntDoubleFunction)  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.RCDoubleMatrix2D at new cern.colt.matrix.impl.RCDoubleMatrix2D(double[][]) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B CT: Exception thrown in class cern.colt.matrix.impl.RCDoubleMatrix2D at new cern.colt.matrix.impl.RCDoubleMatrix2D(int, int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.map.OpenIntObjectHashMap inherits equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.map.OpenIntObjectHashMap is Serializable; consider declaring a serialVersionUID  In <Unknown>
+L P UPM: Private method cern.colt.matrix.objectalgo.Partitioning.xPartitionOld(ObjectMatrix2D, ObjectMatrix1D, int, int, Object[], int, int, int[]) is never called  In <Unknown>
+L P UPM: Private method cern.colt.matrix.objectalgo.Partitioning.xPartitionOld(ObjectMatrix2D, ObjectMatrix1D, int, int, Object) is never called  In <Unknown>
+L D FE: Test for floating point equality in cern.colt.matrix.doublealgo.Sorting$13.compare(DoubleMatrix1D, DoubleMatrix1D)  In <Unknown>
+H I Dm: Found reliance on default encoding in hep.aida.ref.Test.writeAsXML(IHistogram1D, String): new java.io.FileWriter(String)  In <Unknown>
+H I Dm: Found reliance on default encoding in hep.aida.ref.Test.writeAsXML(IHistogram2D, String): new java.io.FileWriter(String)  In <Unknown>
+M V EI2: new cern.colt.buffer.IntBuffer(IntBufferConsumer, int) may expose internal representation by storing an externally mutable object into IntBuffer.target  In <Unknown>
+L B SnVI: cern.colt.buffer.IntBuffer is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M C RpC: Repeated conditional test in cern.colt.bitvector.BitMatrix.elements(long[], int, int)  In <Unknown>
+L D UC: Useless condition: it's known that arg1 >= 0 at this point  In <Unknown>
+M C INT: Bad comparison of nonnegative value with 0 in cern.colt.bitvector.BitMatrix.elements(long[], int, int)  In <Unknown>
+L B SnVI: cern.colt.bitvector.BitMatrix is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CT: Exception thrown in class cern.colt.bitvector.BitMatrix at new cern.colt.bitvector.BitMatrix(int, int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  In <Unknown>
+M B HE: cern.colt.list.AbstractShortList defines equals and uses Object.hashCode()  In <Unknown>
+L B SnVI: cern.colt.matrix.objectalgo.Sorting is Serializable; consider declaring a serialVersionUID  In <Unknown>
+M B CNT: Rough value of Math.PI/4 found: 0.785398164  In <Unknown>
+M B CNT: Rough value of Math.PI/4 found: 0.785398164  In <Unknown>
+L B BIT: Check for sign of bitwise operation in cern.jet.math.Bessel.kn(int, double)  In <Unknown>
+M D IM: Check for oddness that won't work for negative numbers in cern.jet.math.Bessel.jn(int, double)  In <Unknown>
+M V EI2: new cern.colt.list.adapter.ObjectListAdapter(ObjectArrayList) may expose internal representation by storing an externally mutable object into ObjectListAdapter.content  In <Unknown>
+L D RI: Class cern.colt.list.adapter.ObjectListAdapter implements same interface as superclass  In <Unknown>
+M B HE: cern.colt.list.AbstractCharList defines equals and uses Object.hashCode()  In <Unknown>
+L C UwF: Unwritten field: hep.aida.ref.FixedAxis.xover  In <Unknown>
+L C UwF: Unwritten field: hep.aida.ref.FixedAxis.xunder  In <Unknown>
+L P SIC: The class cern.colt.matrix.linalg.SmpBlas$7 could be refactored into a named _static_ inner class  In <Unknown>
+M D UuF: Unused public or protected field: cern.colt.matrix.bench.BenchmarkMatrix$3.dummy  In <Unknown>
+M P UrF: Unread field: cern.colt.matrix.bench.BenchmarkMatrix$20.value  In <Unknown>
+L P SIC: The class cern.colt.matrix.impl.WrapperDoubleMatrix2D$4 could be refactored into a named _static_ inner class  In <Unknown>
+L P SIC: The class cern.colt.matrix.impl.WrapperDoubleMatrix2D$2 could be refactored into a named _static_ inner class  In <Unknown>
+M P UrF: Unread field: cern.colt.matrix.bench.BenchmarkMatrix$18.value  In <Unknown>
+L P SIC: The class cern.colt.matrix.impl.WrapperDoubleMatrix1D$1 could be refactored into a named _static_ inner class  In <Unknown>
+M D UrF: Unread public/protected field: cern.colt.matrix.bench.BenchmarkMatrix$12.dummy  In <Unknown>
+L P SIC: The class cern.colt.matrix.doublealgo.Statistic$4 could be refactored into a named _static_ inner class  In <Unknown>
+L D UrF: Unread public/protected field: cern.colt.Partitioning.swappedElements  In <Unknown>
+L P SIC: The class cern.colt.matrix.impl.WrapperDoubleMatrix2D$1 could be refactored into a named _static_ inner class  In <Unknown>
+M P SIC: Should cern.colt.bitvector.BitVector$IndexProcedure be a _static_ inner class?  In <Unknown>
+L D UwF: BenchmarkMatrix$14.lu not initialized in constructor and dereferenced in cern.colt.matrix.bench.BenchmarkMatrix$14.apply(Timer)  In <Unknown>
+L C MF: Field DelegateDoubleMatrix1D.content masks field in superclass cern.colt.matrix.impl.WrapperDoubleMatrix1D  In <Unknown>
+M C MF: Field SimpleLongArrayList.size masks field in superclass cern.colt.list.AbstractLongList  In <Unknown>
+H V MS: cern.jet.random.Hyperbolic.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.StudentT.shared isn't final but should be  In <Unknown>
+M V MS: cern.jet.stat.Probability.P0 should be package protected  In <Unknown>
+M V MS: cern.jet.stat.Probability.Q0 should be package protected  In <Unknown>
+M V MS: cern.jet.stat.Probability.P1 should be package protected  In <Unknown>
+M V MS: cern.jet.stat.Probability.Q1 should be package protected  In <Unknown>
+M V MS: cern.jet.stat.Probability.P2 should be package protected  In <Unknown>
+M V MS: cern.jet.stat.Probability.Q2 should be package protected  In <Unknown>
+H V MS: cern.jet.random.Zeta.shared isn't final but should be  In <Unknown>
+M V MS: cern.jet.math.Arithmetic.logFactorials should be package protected  In <Unknown>
+M V MS: cern.jet.math.Arithmetic.longFactorials should be package protected  In <Unknown>
+M V MS: cern.jet.math.Arithmetic.doubleFactorials should be package protected  In <Unknown>
+H V MS: cern.jet.random.HyperGeometric.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.ChiSquare.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Logarithmic.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Beta.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Exponential.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Uniform.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.BreitWigner.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.BreitWignerMeanSquare.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.VonMises.shared isn't final but should be  In <Unknown>
+M V MS: cern.jet.random.PoissonSlow.cof should be package protected  In <Unknown>
+H V MS: cern.jet.random.PoissonSlow.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.ExponentialPower.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Binomial.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Gamma.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Poisson.shared isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.Normal.shared isn't final but should be  In <Unknown>
+M V MS: hep.aida.bin.StaticBin1D.arguments should be both final and package protected  In <Unknown>
+M V MS: cern.colt.matrix.linalg.SmpBlas.smpBlas isn't final and cannot be protected from malicious code  In <Unknown>
+H V MS: cern.colt.matrix.linalg.SmpBlas.NN_THRESHOLD isn't final but should be  In <Unknown>
+M V MS: cern.colt.Partitioning.steps should be package protected  In <Unknown>
+L V MS: cern.colt.Partitioning.swappedElements isn't final but should be  In <Unknown>
+H V MS: cern.jet.random.NegativeBinomial.shared isn't final but should be  In <Unknown>
+M V MS: cern.jet.math.Bessel.A_i0 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.B_i0 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.A_i1 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.B_i1 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.A_k0 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.B_k0 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.A_k1 should be package protected  In <Unknown>
+M V MS: cern.jet.math.Bessel.B_k1 should be package protected  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.MightyStaticBin1D.sumOfLogarithms; locked 71% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.StaticBin1D.sum; locked 87% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.StaticBin1D.min; locked 87% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.MightyStaticBin1D.sumOfInversions; locked 57% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.StaticBin1D.sum_xx; locked 87% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.StaticBin1D.max; locked 87% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.StaticBin1D.size; locked 88% of time  In <Unknown>
+M M IS: Inconsistent synchronization of hep.aida.bin.DynamicBin1D.fixedOrder; locked 80% of time  In <Unknown>
+The following classes needed for analysis were missing:
+  EDU.oswego.cs.dl.util.concurrent.FJTask
+  EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup

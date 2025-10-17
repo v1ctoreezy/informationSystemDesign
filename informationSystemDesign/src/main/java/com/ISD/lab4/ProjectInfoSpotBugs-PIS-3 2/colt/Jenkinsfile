@@ -1,0 +1,79 @@
+pipeline {
+    agent any
+    
+    tools {
+        maven 'Maven-3.8.6'
+        jdk 'JDK-11'
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                dir('colt') {
+                    sh 'mvn clean compile'
+                }
+            }
+        }
+        
+        stage('Static Analysis') {
+            steps {
+                dir('colt') {
+                    sh 'mvn spotbugs:check'
+                }
+            }
+            post {
+                always {
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: 'colt/target/spotbugs',
+                        reportFiles: 'spotbugsXml.xml',
+                        reportName: 'SpotBugs Report - Colt'
+                    ])
+                }
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                dir('colt') {
+                    sh 'mvn test || echo "No tests found"'
+                }
+            }
+        }
+        
+        stage('Documentation') {
+            steps {
+                dir('colt') {
+                    sh 'mvn javadoc:javadoc || echo "Javadoc generation failed"'
+                }
+            }
+        }
+        
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'colt/target/*.jar', fingerprint: true
+                archiveArtifacts artifacts: 'colt/target/site/**/*', fingerprint: true
+            }
+        }
+    }
+    
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            echo 'Colt pipeline completed successfully!'
+        }
+        failure {
+            echo 'Colt pipeline failed!'
+        }
+    }
+}

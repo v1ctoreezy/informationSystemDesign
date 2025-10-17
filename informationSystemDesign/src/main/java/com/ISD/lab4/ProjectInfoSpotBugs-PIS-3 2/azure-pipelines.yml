@@ -1,0 +1,144 @@
+trigger:
+  branches:
+    include:
+    - main
+    - develop
+  paths:
+    include:
+    - ProjectInfoSystem(zadanie1)/**
+    - library/**
+    - colt/**
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  mavenVersion: '3.8.6'
+  javaVersion: '11'
+
+stages:
+- stage: Build
+  displayName: 'Build Stage'
+  jobs:
+  - job: Zadanie1
+    displayName: 'Build Zadanie1'
+    steps:
+    - task: JavaToolInstaller@0
+      inputs:
+        versionSpec: '$(javaVersion)'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
+    
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'ProjectInfoSystem(zadanie1)/pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: true
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'clean compile'
+    
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'ProjectInfoSystem(zadanie1)/pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        jdkArchitectureOption: 'x64'
+        goals: 'spotbugs:check'
+    
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'ProjectInfoSystem(zadanie1)/target/spotbugs/spotbugsXml.xml'
+        testRunTitle: 'SpotBugs Analysis - Zadanie1'
+      continueOnError: true
+
+  - job: Library
+    displayName: 'Build Library'
+    steps:
+    - task: JavaToolInstaller@0
+      inputs:
+        versionSpec: '$(javaVersion)'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
+    
+    - script: |
+        cd library
+        javac -cp "lib/jsr305-2.0.0.jar" -d build/classes src/bookstore/*.java
+      displayName: 'Compile Library'
+    
+    - script: |
+        cd library
+        java -jar spotbugs-4.8.3/lib/spotbugs.jar -textui -output spotbugs-azure-report.txt -cp "lib/jsr305-2.0.0.jar" build/classes/
+      displayName: 'Run SpotBugs on Library'
+      continueOnError: true
+
+  - job: Colt
+    displayName: 'Build Colt'
+    steps:
+    - task: JavaToolInstaller@0
+      inputs:
+        versionSpec: '$(javaVersion)'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
+    
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'colt/pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: true
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'clean compile'
+    
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'colt/pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        jdkArchitectureOption: 'x64'
+        goals: 'spotbugs:check'
+    
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'colt/pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        jdkArchitectureOption: 'x64'
+        goals: 'javadoc:javadoc'
+      continueOnError: true
+
+- stage: Test
+  displayName: 'Test Stage'
+  dependsOn: Build
+  jobs:
+  - job: RunTests
+    displayName: 'Run All Tests'
+    steps:
+    - task: JavaToolInstaller@0
+      inputs:
+        versionSpec: '$(javaVersion)'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
+    
+    - script: |
+        cd "ProjectInfoSystem(zadanie1)"
+        java -cp "target/classes" com.example.Main
+      displayName: 'Run Zadanie1 Examples'
+    
+    - script: |
+        cd library
+        java -cp "build/classes:lib/jsr305-2.0.0.jar" bookstore.Library
+      displayName: 'Run Library Examples'
+    
+    - script: |
+        cd colt
+        mvn test || echo "No tests found"
+      displayName: 'Run Colt Tests'

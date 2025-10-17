@@ -1,0 +1,53 @@
+name: Library - Анализ библиотеки с SpotBugs
+
+on:
+  push:
+    paths:
+      - 'library/**'
+  pull_request:
+    paths:
+      - 'library/**'
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        
+    - name: Compile library
+      run: |
+        cd library
+        javac -cp "lib/jsr305-2.0.0.jar" -d build/classes src/bookstore/*.java
+        
+    - name: Run SpotBugs analysis
+      run: |
+        cd library
+        # Используем SpotBugs для анализа
+        java -jar spotbugs-4.8.3/lib/spotbugs.jar -textui -output spotbugs-ci-report.txt -cp "lib/jsr305-2.0.0.jar" build/classes/
+        
+    - name: Run library examples
+      run: |
+        cd library
+        java -cp "build/classes:lib/jsr305-2.0.0.jar" bookstore.Library
+        
+    - name: Upload SpotBugs results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: spotbugs-report-library
+        path: library/spotbugs-ci-report.txt
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts-library
+        path: library/build/

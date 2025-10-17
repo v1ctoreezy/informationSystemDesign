@@ -1,0 +1,64 @@
+SPOTBUGS ANALYSIS REPORT - PROJECT LIBRARY
+==========================================
+
+Analysis Date: $(Get-Date)
+SpotBugs Version: 4.8.3
+JSR-305 Library: jsr305-2.0.0.jar
+
+SUMMARY:
+--------
+Total Bugs Found: 6
+High Priority: 2
+Medium Priority: 3
+Low Priority: 1
+
+DETAILED FINDINGS:
+-----------------
+
+1. NP_NULL_ON_SOME_PATH (HIGH PRIORITY)
+   File: src/bookstore/Book.java, Line 16
+   Method: getSubtitle()
+   Issue: Method returns @Nonnull but field subtitle is @CheckForNull
+   Risk: NullPointerException at runtime
+
+2. UWF_UNWRITTEN_FIELD (MEDIUM PRIORITY)
+   File: src/bookstore/Book.java, Line 8
+   Field: author, title, subtitle
+   Issue: Fields declared but not initialized, no constructor
+   Risk: All fields will be null by default
+
+3. NP_NULL_ON_SOME_PATH (HIGH PRIORITY)
+   File: src/bookstore/Library.java, Line 48
+   Method: ComparatorImpl.compare()
+   Issue: getSubtitle().compareTo() without null check
+   Risk: NullPointerException in TreeSet operations
+
+4. NP_NULL_PARAM_DEREF (MEDIUM PRIORITY)
+   File: src/bookstore/Library.java, Line 29
+   Method: describeBooksBy()
+   Issue: b.getAuthor() called without null check
+   Risk: NullPointerException if book has null author
+
+5. NP_NULL_ON_SOME_PATH (MEDIUM PRIORITY)
+   File: src/bookstore/Library.java, Line 31
+   Method: describeBooksBy()
+   Issue: b.getTitle() may return null
+   Risk: NullPointerException in String.format()
+
+6. SE_BAD_FIELD (LOW PRIORITY)
+   File: src/bookstore/Library.java, Line 13
+   Class: ComparatorImpl
+   Issue: Serializable class with non-serializable field reference
+   Risk: Serialization issues
+
+RECOMMENDATIONS:
+---------------
+1. Fix getSubtitle() method annotation or add null check
+2. Add constructor to Book class
+3. Add null checks in ComparatorImpl.compare()
+4. Add null checks in describeBooksBy() method
+5. Consider removing Serializable from ComparatorImpl
+
+CRITICAL ISSUES TO FIX IMMEDIATELY:
+- Book.getSubtitle() null pointer issue
+- ComparatorImpl.compare() null pointer issue
