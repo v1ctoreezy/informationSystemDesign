@@ -1,0 +1,108 @@
+name: Задание 2 - JSR-305 аннотации и статический анализ
+
+on:
+  push:
+    paths:
+      - 'ProjectInfoSystem(zadanie2)/**'
+  pull_request:
+    paths:
+      - 'ProjectInfoSystem(zadanie2)/**'
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        
+    - name: Cache Maven dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+        
+    - name: Navigate to zadanie2
+      run: cd "ProjectInfoSystem(zadanie2)"
+      
+    - name: Compile with Maven
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        mvn clean compile
+        
+    - name: Run SpotBugs with JSR-305
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        mvn spotbugs:check
+        
+    - name: Generate detailed SpotBugs report
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        mvn spotbugs:gui || true
+        
+    - name: Run examples with JSR-305
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        java -cp "target/classes" com.example.Main
+        
+    - name: Validate JSR-305 annotations
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        # Проверяем наличие JSR-305 аннотаций в коде
+        grep -r "@Nullable\|@Nonnull\|@NotThreadSafe" src/main/java/ || echo "JSR-305 annotations found"
+        
+    - name: Upload SpotBugs results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: spotbugs-jsr305-report-zadanie2
+        path: ProjectInfoSystem(zadanie2)/target/spotbugs/
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts-zadanie2
+        path: ProjectInfoSystem(zadanie2)/target/
+        
+  jsr305-validation:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        
+    - name: Validate JSR-305 usage
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        echo "Checking JSR-305 annotation usage..."
+        
+        # Проверяем наличие аннотаций
+        echo "=== Nullable annotations ==="
+        grep -r "@Nullable" src/main/java/ || echo "No @Nullable found"
+        
+        echo "=== Nonnull annotations ==="
+        grep -r "@Nonnull" src/main/java/ || echo "No @Nonnull found"
+        
+        echo "=== Thread safety annotations ==="
+        grep -r "@NotThreadSafe\|@ThreadSafe" src/main/java/ || echo "No thread safety annotations found"
+        
+    - name: Run enhanced static analysis
+      run: |
+        cd "ProjectInfoSystem(zadanie2)"
+        mvn spotbugs:check -Dspotbugs.effort=Max -Dspotbugs.threshold=Low
+

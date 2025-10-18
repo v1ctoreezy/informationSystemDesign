@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- Этот файл НЕ исключает никаких ошибок -->
+    <!-- Если вы хотите исключить конкретные ошибки, раскомментируйте нужные блоки -->
+    <!--
+    <Match>
+        <Bug pattern="PATTERN_TO_EXCLUDE" />
+    </Match>
+    -->
+</FindBugsFilter>
+

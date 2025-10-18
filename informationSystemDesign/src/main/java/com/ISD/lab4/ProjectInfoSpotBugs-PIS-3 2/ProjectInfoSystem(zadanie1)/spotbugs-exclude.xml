@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- Исключаем некоторые предупреждения для демонстрационных целей -->
+    <Match>
+        <Bug pattern="DM_NUMBER_CTOR" />
+        <Class name="com.example.Example3" />
+    </Match>
+</FindBugsFilter>

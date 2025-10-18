@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- Включаем все проверки -->
+    <Match>
+        <Bug category="CORRECTNESS,BAD_PRACTICE,MT_CORRECTNESS,PERFORMANCE,STYLE,MALICIOUS_CODE,SECURITY,EXPERIMENTAL"/>
+    </Match>
+</FindBugsFilter>
+
