@@ -1,0 +1,69 @@
+pipeline {
+    agent any
+    
+    tools {
+        jdk 'JDK-11'
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                dir('library') {
+                    sh 'javac -cp "lib/jsr305-2.0.0.jar" -d build/classes src/bookstore/*.java'
+                }
+            }
+        }
+        
+        stage('Static Analysis') {
+            steps {
+                dir('library') {
+                    sh 'java -jar spotbugs-4.8.3/lib/spotbugs.jar -textui -output spotbugs-jenkins-report.txt -cp "lib/jsr305-2.0.0.jar" build/classes/'
+                }
+            }
+            post {
+                always {
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: 'library',
+                        reportFiles: 'spotbugs-jenkins-report.txt',
+                        reportName: 'SpotBugs Report - Library'
+                    ])
+                }
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                dir('library') {
+                    sh 'java -cp "build/classes:lib/jsr305-2.0.0.jar" bookstore.Library'
+                }
+            }
+        }
+        
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'library/build/classes/**/*.class', fingerprint: true
+            }
+        }
+    }
+    
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            echo 'Library pipeline completed successfully!'
+        }
+        failure {
+            echo 'Library pipeline failed!'
+        }
+    }
+}

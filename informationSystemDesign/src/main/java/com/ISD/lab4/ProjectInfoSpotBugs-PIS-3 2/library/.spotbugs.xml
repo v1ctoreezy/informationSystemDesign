@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spotbugs>
+    <!-- Включаем все проверки -->
+    <include>
+        <Bug pattern="NP_NULL_ON_SOME_PATH" />
+        <Bug pattern="NP_NULL_PARAM_DEREF" />
+        <Bug pattern="UWF_UNWRITTEN_FIELD" />
+        <Bug pattern="SE_BAD_FIELD" />
+        <Bug pattern="SE_NO_SERIALVERSIONID" />
+    </include>
+
+    <!-- Настройки анализа -->
+    <effort>max</effort>
+    <threshold>low</threshold>
+
+    <!-- Включаем все категории багов -->
+    <bugCategories>
+        <category>CORRECTNESS</category>
+        <category>BAD_PRACTICE</category>
+        <category>PERFORMANCE</category>
+        <category>STYLE</category>
+        <category>SECURITY</category>
+    </bugCategories>
+</spotbugs>
+

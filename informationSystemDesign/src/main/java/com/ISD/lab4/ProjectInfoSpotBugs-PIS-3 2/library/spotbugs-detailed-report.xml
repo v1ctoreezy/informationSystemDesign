@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BugCollection version="4.8.3" sequence="0" timestamp="$(Get-Date -Format 'yyyy-MM-ddTHH:mm:ss')" analysisTimestamp="$(Get-Date -Format 'yyyy-MM-ddTHH:mm:ss')" release="">
+  <Project projectName="library">
+    <Jar>library.jar</Jar>
+    <Plugin id="com.github.spotbugs" version="4.8.3" enabled="true" />
+    <Plugin id="com.github.spotbugs.plugins.human" version="1.0.0" enabled="true" />
+  </Project>
+  
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="1" rank="1" abbrev="NP" category="CORRECTNESS" first="true">
+    <ShortMessage>Null pointer dereference in bookstore.Book.getSubtitle()</ShortMessage>
+    <LongMessage>Null pointer dereference in bookstore.Book.getSubtitle() [bookstore.Book] At Book.java:[line 16]</LongMessage>
+    <Class classname="bookstore.Book" primary="true">
+      <SourceLine classname="bookstore.Book" start="16" end="18" startBytecode="0" endBytecode="0" sourcefile="Book.java" sourcepath="bookstore/Book.java">
+        <Message>At Book.java:[line 16]</Message>
+      </SourceLine>
+      <Method classname="bookstore.Book" name="getSubtitle" signature="()Ljava/lang/String;" isStatic="false">
+        <SourceLine classname="bookstore.Book" start="16" end="18" startBytecode="0" endBytecode="0" sourcefile="Book.java" sourcepath="bookstore/Book.java">
+          <Message>At Book.java:[line 16]</Message>
+        </SourceLine>
+      </Method>
+    </Class>
+    <Field classname="bookstore.Book" name="subtitle" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="bookstore.Book" start="10" end="10" startBytecode="0" endBytecode="0" sourcefile="Book.java" sourcepath="bookstore/Book.java">
+        <Message>At Book.java:[line 10]</Message>
+      </SourceLine>
+    </Field>
+  </BugInstance>
+
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="2" abbrev="UWF" category="CORRECTNESS" first="true">
+    <ShortMessage>Unwritten field in bookstore.Book</ShortMessage>
+    <LongMessage>Unwritten field in bookstore.Book [bookstore.Book] At Book.java:[line 8]</LongMessage>
+    <Class classname="bookstore.Book" primary="true">
+      <SourceLine classname="bookstore.Book" start="8" end="10" startBytecode="0" endBytecode="0" sourcefile="Book.java" sourcepath="bookstore/Book.java">
+        <Message>At Book.java:[line 8]</Message>
+      </SourceLine>
+    </Class>
+    <Field classname="bookstore.Book" name="author" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="bookstore.Book" start="8" end="8" startBytecode="0" endBytecode="0" sourcefile="Book.java" sourcepath="bookstore/Book.java">
+        <Message>At Book.java:[line 8]</Message>
+      </SourceLine>
+    </Field>
+  </BugInstance>
+
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="1" rank="1" abbrev="NP" category="CORRECTNESS" first="true">
+    <ShortMessage>Null pointer dereference in bookstore.Library$ComparatorImpl.compare()</ShortMessage>
+    <LongMessage>Null pointer dereference in bookstore.Library$ComparatorImpl.compare() [bookstore.Library$ComparatorImpl] At Library.java:[line 48]</LongMessage>
+    <Class classname="bookstore.Library$ComparatorImpl" primary="true">
+      <SourceLine classname="bookstore.Library$ComparatorImpl" start="48" end="48" startBytecode="0" endBytecode="0" sourcefile="Library.java" sourcepath="bookstore/Library.java">
+        <Message>At Library.java:[line 48]</Message>
+      </SourceLine>
+      <Method classname="bookstore.Library$ComparatorImpl" name="compare" signature="(Lbookstore/Book;Lbookstore/Book;)I" isStatic="false">
+        <SourceLine classname="bookstore.Library$ComparatorImpl" start="39" end="51" startBytecode="0" endBytecode="0" sourcefile="Library.java" sourcepath="bookstore/Library.java">
+          <Message>At Library.java:[line 39]</Message>
+        </SourceLine>
+      </Method>
+    </Class>
+  </BugInstance>
+
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="2" abbrev="NP" category="CORRECTNESS" first="true">
+    <ShortMessage>Null pointer dereference in bookstore.Library.describeBooksBy()</ShortMessage>
+    <LongMessage>Null pointer dereference in bookstore.Library.describeBooksBy() [bookstore.Library] At Library.java:[line 29]</LongMessage>
+    <Class classname="bookstore.Library" primary="true">
+      <SourceLine classname="bookstore.Library" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="Library.java" sourcepath="bookstore/Library.java">
+        <Message>At Library.java:[line 29]</Message>
+      </SourceLine>
+      <Method classname="bookstore.Library" name="describeBooksBy" signature="(Ljava/lang/String;)Ljava/lang/Iterable;" isStatic="false">
+        <SourceLine classname="bookstore.Library" start="25" end="35" startBytecode="0" endBytecode="0" sourcefile="Library.java" sourcepath="bookstore/Library.java">
+          <Message>At Library.java:[line 25]</Message>
+        </SourceLine>
+      </Method>
+    </Class>
+  </BugInstance>
+
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="3" abbrev="SE" category="BAD_PRACTICE" first="true">
+    <ShortMessage>Bad field in serializable class in bookstore.Library$ComparatorImpl</ShortMessage>
+    <LongMessage>Bad field in serializable class in bookstore.Library$ComparatorImpl [bookstore.Library$ComparatorImpl] At Library.java:[line 13]</LongMessage>
+    <Class classname="bookstore.Library$ComparatorImpl" primary="true">
+      <SourceLine classname="bookstore.Library$ComparatorImpl" start="37" end="54" startBytecode="0" endBytecode="0" sourcefile="Library.java" sourcepath="bookstore/Library.java">
+        <Message>At Library.java:[line 37]</Message>
+      </SourceLine>
+    </Class>
+  </BugInstance>
+
+  <BugCollection>
+    <Stats>
+      <PackageStats package="bookstore" totalBugs="5" totalClasses="2" totalSize="0">
+        <ClassStats className="bookstore.Book" size="0" bugs="2" />
+        <ClassStats className="bookstore.Library" size="0" bugs="3" />
+      </PackageStats>
+    </Stats>
+  </BugCollection>
+</BugCollection>
